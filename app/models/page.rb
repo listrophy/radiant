@@ -250,7 +250,7 @@ class Page < ActiveRecord::Base
       false
     end
 
-    private
+    protected
 
       def default_page_parts(config = Radiant::Config)
         default_parts = config['defaults.page.parts'].to_s.strip.split(/\s*,\s*/)
